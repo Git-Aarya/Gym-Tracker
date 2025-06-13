@@ -387,7 +387,7 @@ export default function App() {
     const removeExerciseFromTemplateBuilder = (exIndex) => setTemplateBuilderData(d => ({ ...d, exercises: d.exercises.filter((_, i) => i !== exIndex) }));
     const handleTemplateBuilderSetChange = (exIndex, setIndex, field, value) => {
         const newExercises = [...templateBuilderData.exercises];
-        newExercises[exIndex].sets[setIndex][field] = value; // Keep as string to allow empty input
+        newExercises[exIndex].sets[setIndex][field] = value;
         setTemplateBuilderData(d => ({ ...d, exercises: newExercises }));
     };
     
