@@ -40,7 +40,7 @@ To get the project running, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone <YOUR_REPOSITORY_URL>
+    git clone https://github.com/Git-Aarya/Gym-Tracker
     ```
 2.  **Navigate into the project directory:**
     ```bash
