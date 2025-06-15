@@ -4,18 +4,6 @@
 
 **A sleek, minimal, all-in-one mobile app to track your gym workouts, monitor your progress, and stay motivated. Built with React and designed to run completely offline on your device.**
 
-</div>
-
-<div align="center">
-
-<!-- IMPORTANT: Replace these with your own repository's badges. You can generate them at https://shields.io/ -->
-![License](https://img.shields.io/github/license/Git-Aarya/Gym-Tracker?style=for-the-badge)
-![Repo Size](https://img.shields.io/github/repo-size/Git-Aarya/Gym-Tracker?style=for-the-badge)
-![Last Commit](https://img.shields.io/github/last-commit/Git-Aarya/Gym-Tracker?style=for-the-badge)
-![Issues](https://img.shields.io/github/issues/Git-Aarya/Gym-Tracker?style=for-the-badge)
-
-</div>
-
 <br>
 
 <!-- IMPORTANT: Add a hero image or GIF of your app here! -->
