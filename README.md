@@ -44,7 +44,7 @@ To get the project running, follow these steps:
     ```
 2.  **Navigate into the project directory:**
     ```bash
-    cd gym-tracker-app
+    cd Gym-Tracker
     ```
 3.  **Install dependencies:**
     ```bash
