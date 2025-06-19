@@ -6,10 +6,6 @@
 
 <br>
 
-<!-- IMPORTANT: Add a hero image or GIF of your app here! -->
-<p align="center">
-  <img src="https://via.placeholder.com/800x400.png?text=App+Showcase+GIF+or+Image" alt="App Demo GIF" width="80%">
-</p>
 
 ## ✨ About The Project
 
