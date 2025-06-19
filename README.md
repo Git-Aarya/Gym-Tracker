@@ -15,10 +15,10 @@ This application is a comprehensive tool for fitness enthusiasts who want to met
 
 ## 🚀 Key Features
 
-**🔒 Offline First:** All data is stored locally. No internet connection or account needed. Your data is private and always available.
-**🔄 Persistent Workouts:** Start a workout and navigate away. A "Return to Workout" button brings you right back to your active session.
-**🏋️ Customizable Templates:** Create, edit, and save detailed workout presets, including exercises, sets, reps, weights, and rest times. New sets added to templates now correctly initialize with independent default values (e.g., 8 reps, 10 kg/22 lbs).
-**🏃 Cardio & Weight Training:** Log both weightlifting (sets, reps, weight) and cardio exercises (duration).
+* **🔒 Offline First:** All data is stored locally. No internet connection or account needed. Your data is private and always available.
+* **🔄 Persistent Workouts:** Start a workout and navigate away. A "Return to Workout" button brings you right back to your active session.
+* **🏋️ Customizable Templates:** Create, edit, and save detailed workout presets, including exercises, sets, reps, weights, and rest times. New sets added to templates now correctly initialize with independent default values (e.g., 8 reps, 10 kg/22 lbs).
+* **🏃 Cardio & Weight Training:** Log both weightlifting (sets, reps, weight) and cardio exercises (duration).
 * **⏱️ Live Rest Timer:** An automatic timer with sound notifications appears after each set to keep your workout on track.
 * **📊 Dynamic Unit Conversion:** Seamlessly switch between Metric (kg) and Imperial (lbs) units. All weight inputs and displays in active workouts and templates instantly update to reflect your chosen unit. Default weights for new exercises/sets also adjust accordingly (10 kg or 22 lbs).
 * **📈 Advanced Progress Analytics:**
@@ -48,13 +48,11 @@ This application is a comprehensive tool for fitness enthusiasts who want to met
 Built with a modern, efficient, and mobile-first tech stack.
 
 <!-- You can find more icons at https://skillicons.dev/ -->
-<p align="left">
-  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>
-  <a href="https://capacitorjs.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/capacitor-community/awesome-capacitor/main/logo.svg" alt="capacitor" width="40" height="40"/> </a>
-  <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a>
-  <a href="https://recharts.org/" target="_blank" rel="noreferrer"> <img src="https://recharts.org/assets/images/logo.png" alt="recharts" width="40" height="40"/> </a>
-  <a href="https://lucide.dev/" target="_blank" rel="noreferrer"> <img src="https://lucide.dev/logo.light.svg" alt="lucide" width="40" height="40"/> </a>
-</p>
+<a> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>
+<a> <img src="https://raw.githubusercontent.com/capacitor-community/awesome-capacitor/main/logo.svg" alt="capacitor" width="40" height="40"/> </a>
+<a> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a>
+<a> <img src="https://recharts.org/assets/images/logo.png" alt="recharts" width="40" height="40"/> </a>
+<a> <img src="https://lucide.dev/logo.light.svg" alt="lucide" width="40" height="40"/> </a>
 
 * **React:** For building the user interface.
 * **Capacitor:** To wrap the web app into a native mobile application, providing access to native features like the back button.
@@ -125,10 +123,10 @@ To deploy and test the app on a physical device or emulator:
 
 ## 🗺️ Roadmap
 
--   [ ] Cloud backup & sync across devices (optional feature).
--   [ ] Social features: share workouts or progress.
--   [ ] More advanced statistics and weekly summaries.
--   [ ] Wearable device integration (e.g., Apple Watch).
+* [ ] Cloud backup & sync across devices (optional feature).
+* [ ] Social features: share workouts or progress.
+* [ ] More advanced statistics and weekly summaries.
+* [ ] Wearable device integration (e.g., Apple Watch).
 
 See the [open issues](https://github.com/Git-Aarya/Gym-Tracker/issues) for a full list of proposed features (and known issues).
 
