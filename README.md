@@ -60,7 +60,7 @@ Gym Tracker is the companion app for lifters who want **total control over thei
   &nbsp;&nbsp;
   <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind" width="50" />
   &nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/recharts/recharts/master/logo.png" alt="Recharts" width="50" />
+  <img src="https://raw.githubusercontent.com/recharts/recharts/master/logo.png" alt="Recharts" width="40"/>
   &nbsp;&nbsp;
   <img src="https://lucide.dev/logo.light.svg" alt="Lucide" width="50" />
 </div>
