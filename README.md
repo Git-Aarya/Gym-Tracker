@@ -49,8 +49,6 @@ Gym Tracker is the companion app for lifters who want **total control over thei
   <img src="https://placehold.co/200x400/ec4899/ffffff?text=Progress+Charts" alt="Progress charts screenshot" />
 </p>
 
-> *Replace the placeholders above with real screenshots to showcase the UI.*
-
 ---
 
 ## Tech Stack
