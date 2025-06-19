@@ -107,7 +107,20 @@ npx cap open android   # Android Studio
 npx cap open ios       # Xcode (macOS only)
 ```
 
-From Android Studio or Xcode, choose an emulator or device and hit **Run**.
+### 🛠️ Running on a Mobile Device
+
+#### For Android:
+
+1. Connect your Android device via USB and enable **Developer Mode** and **USB Debugging**.
+2. In Android Studio, click **Run** ▶ or select your device from the device list.
+3. The app will be installed and launched on your connected device.
+
+#### For iOS:
+
+1. Open the project in Xcode using `npx cap open ios`.
+2. Select your iOS device or a simulator.
+3. Click **Run** ▶ to build and deploy.
+4. Note: You may need a valid Apple Developer account and provisioning profile to install on a physical device. From Android Studio or Xcode, choose an emulator or device and hit **Run**.
 
 ---
 
