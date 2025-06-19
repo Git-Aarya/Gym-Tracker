@@ -1,11 +1,10 @@
-# Gym Tracker 🏋️‍♂️ — Offline‑First Workout Logger
+# Gym Tracker - All-in-One Workout Logger
 
 <div align="center">
-  <b>A sleek, minimal mobile app to plan workouts, track your lifts, and visualize progress — all without an internet connection.</b>
-  <br>
-  <br>
-  Built with <code>React</code> + <code>Capacitor</code> · Data stays on your device · MIT License
-</div>
+
+**A sleek, minimal, all-in-one mobile app to track your gym workouts, monitor your progress, and stay motivated. Built with React and designed to run completely offline on your device.**
+
+<br>
 
 ---
 
