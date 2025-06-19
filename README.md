@@ -15,24 +15,24 @@ This application is a comprehensive tool for fitness enthusiasts who want to met
 
 ## 🚀 Key Features
 
-* **🔒 Offline First:** All data is stored locally. No internet connection or account needed. Your data is private and always available.
-* **🔄 Persistent Workouts:** Start a workout and navigate away. A "Return to Workout" button brings you right back to your active session.
-* **🏋️ Customizable Templates:** Create, edit, and save detailed workout presets, including exercises, sets, reps, weights, and rest times. New sets added to templates now correctly initialize with independent default values (e.g., 8 reps, 10 kg/22 lbs).
-* **🏃 Cardio & Weight Training:** Log both weightlifting (sets, reps, weight) and cardio exercises (duration).
-* **⏱️ Live Rest Timer:** An automatic timer with sound notifications appears after each set to keep your workout on track.
-* **📊 Dynamic Unit Conversion:** Seamlessly switch between Metric (kg) and Imperial (lbs) units. All weight inputs and displays in active workouts and templates instantly update to reflect your chosen unit. Default weights for new exercises/sets also adjust accordingly (10 kg or 22 lbs).
-* **📈 Advanced Progress Analytics:**
+ **🔒 Offline First:** All data is stored locally. No internet connection or account needed. Your data is private and always available.
+ **🔄 Persistent Workouts:** Start a workout and navigate away. A "Return to Workout" button brings you right back to your active session.
+ **🏋️ Customizable Templates:** Create, edit, and save detailed workout presets, including exercises, sets, reps, weights, and rest times. New sets added to templates now correctly initialize with independent default values (e.g., 8 reps, 10 kg/22 lbs).
+ **🏃 Cardio & Weight Training:** Log both weightlifting (sets, reps, weight) and cardio exercises (duration).
+ **⏱️ Live Rest Timer:** An automatic timer with sound notifications appears after each set to keep your workout on track.
+ **📊 Dynamic Unit Conversion:** Seamlessly switch between Metric (kg) and Imperial (lbs) units. All weight inputs and displays in active workouts and templates instantly update to reflect your chosen unit. Default weights for new exercises/sets also adjust accordingly (10 kg or 22 lbs).
+ **📈 Advanced Progress Analytics:**
     * **Workout Calendar:** A visual calendar highlights your completed workout days.
     * **Body Weight Tracker:** Log your body weight and visualize your progress on a line graph.
     * **PR Tracking:** Automatically detects and saves your Personal Records (max weight & max volume) for each exercise.
     * **Muscle Group Analysis:** Tag exercises with a muscle group and see your training distribution in a clear pie chart.
     * **Exercise-Specific Charts:** Deep dive into your performance for any exercise with dedicated progression graphs.
-* **⚙️ User-Friendly Settings:**
+ **⚙️ User-Friendly Settings:**
     * **Unit System:** Seamlessly switch between Metric (kg) and Imperial (lbs).
     * **Custom Rest Time:** Set your own default rest period.
     * **Custom Modals:** All alert and confirmation dialogs now use a consistent, app-themed modal interface instead of native browser pop-ups.
     * **Data Management:** Easily export all your data to a backup file and import it back when needed.
-* **📱 Native Back Button Support:** Enhanced navigation experience for Android users with proper back button handling via Capacitor.
+ **📱 Native Back Button Support:** Enhanced navigation experience for Android users with proper back button handling via Capacitor.
 
 ### 📸 Screenshots
 
