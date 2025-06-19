@@ -15,10 +15,10 @@ This application is a comprehensive tool for fitness enthusiasts who want to met
 
 ## 🚀 Key Features
 
-* **🔒 Offline First:** All data is stored locally. No internet connection or account needed. Your data is private and always available.
-* **🔄 Persistent Workouts:** Start a workout and navigate away. A "Return to Workout" button brings you right back to your active session.
-* **🏋️ Customizable Templates:** Create, edit, and save detailed workout presets, including exercises, sets, reps, weights, and rest times. New sets added to templates now correctly initialize with independent default values (e.g., 8 reps, 10 kg/22 lbs).
-* **🏃 Cardio & Weight Training:** Log both weightlifting (sets, reps, weight) and cardio exercises (duration).
+**🔒 Offline First:** All data is stored locally. No internet connection or account needed. Your data is private and always available.
+**🔄 Persistent Workouts:** Start a workout and navigate away. A "Return to Workout" button brings you right back to your active session.
+**🏋️ Customizable Templates:** Create, edit, and save detailed workout presets, including exercises, sets, reps, weights, and rest times. New sets added to templates now correctly initialize with independent default values (e.g., 8 reps, 10 kg/22 lbs).
+**🏃 Cardio & Weight Training:** Log both weightlifting (sets, reps, weight) and cardio exercises (duration).
 * **⏱️ Live Rest Timer:** An automatic timer with sound notifications appears after each set to keep your workout on track.
 * **📊 Dynamic Unit Conversion:** Seamlessly switch between Metric (kg) and Imperial (lbs) units. All weight inputs and displays in active workouts and templates instantly update to reflect your chosen unit. Default weights for new exercises/sets also adjust accordingly (10 kg or 22 lbs).
 * **📈 Advanced Progress Analytics:**
