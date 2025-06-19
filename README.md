@@ -17,9 +17,10 @@ This application is a comprehensive tool for fitness enthusiasts who want to met
 
 * **🔒 Offline First:** All data is stored locally. No internet connection or account needed. Your data is private and always available.
 * **🔄 Persistent Workouts:** Start a workout and navigate away. A "Return to Workout" button brings you right back to your active session.
-* **🏋️ Customizable Templates:** Create, edit, and save detailed workout presets, including exercises, sets, reps, weights, and rest times.
+* **🏋️ Customizable Templates:** Create, edit, and save detailed workout presets, including exercises, sets, reps, weights, and rest times. New sets added to templates now correctly initialize with independent default values (e.g., 8 reps, 10 kg/22 lbs).
 * **🏃 Cardio & Weight Training:** Log both weightlifting (sets, reps, weight) and cardio exercises (duration).
 * **⏱️ Live Rest Timer:** An automatic timer with sound notifications appears after each set to keep your workout on track.
+* **📊 Dynamic Unit Conversion:** Seamlessly switch between Metric (kg) and Imperial (lbs) units. All weight inputs and displays in active workouts and templates instantly update to reflect your chosen unit. Default weights for new exercises/sets also adjust accordingly (10 kg or 22 lbs).
 * **📈 Advanced Progress Analytics:**
     * **Workout Calendar:** A visual calendar highlights your completed workout days.
     * **Body Weight Tracker:** Log your body weight and visualize your progress on a line graph.
@@ -29,14 +30,16 @@ This application is a comprehensive tool for fitness enthusiasts who want to met
 * **⚙️ User-Friendly Settings:**
     * **Unit System:** Seamlessly switch between Metric (kg) and Imperial (lbs).
     * **Custom Rest Time:** Set your own default rest period.
+    * **Custom Modals:** All alert and confirmation dialogs now use a consistent, app-themed modal interface instead of native browser pop-ups.
     * **Data Management:** Easily export all your data to a backup file and import it back when needed.
+* **📱 Native Back Button Support:** Enhanced navigation experience for Android users with proper back button handling via Capacitor.
 
 ### 📸 Screenshots
 
 <!-- IMPORTANT: Replace these placeholder images with actual screenshots of your app. -->
 | Dashboard | Active Workout | Progress |
 | :---: | :---: | :---: |
-| <img src="https://via.placeholder.com/300x600.png?text=Dashboard+Screen" alt="Dashboard" width="200"/> | <img src="https://via.placeholder.com/300x600.png?text=Active+Workout" alt="Workout" width="200"/> | <img src="https://via.placeholder.com/300x600.png?text=Progress+Charts" alt="Progress" width="200"/> |
+| <img src="https://placehold.co/300x600/3b82f6/ffffff?text=Dashboard+Screen" alt="Dashboard" width="200"/> | <img src="https://placehold.co/300x600/8b5cf6/ffffff?text=Active+Workout+Screen" alt="Workout" width="200"/> | <img src="https://placehold.co/300x600/ec4899/ffffff?text=Progress+Charts+Screen" alt="Progress" width="200"/> |
 
 ---
 
@@ -54,10 +57,10 @@ Built with a modern, efficient, and mobile-first tech stack.
 </p>
 
 * **React:** For building the user interface.
-* **Capacitor:** To wrap the web app into a native mobile application.
-* **Tailwind CSS:** For all styling and layout.
+* **Capacitor:** To wrap the web app into a native mobile application, providing access to native features like the back button.
+* **Tailwind CSS:** For all styling and layout, ensuring a responsive and modern design.
 * **Recharts:** For creating beautiful and responsive progress charts.
-* **Lucide React:** For a clean and modern icon set.
+* **Lucide React:** For a clean and modern icon set, enhancing the visual appeal.
 
 ---
 
@@ -96,24 +99,27 @@ Make sure you have Node.js and npm installed on your machine.
 
 ## 📱 Building for Mobile (with Capacitor)
 
-1.  Build the web assets:
+To deploy and test the app on a physical device or emulator:
+
+1.  Build the web assets for production:
     ```bash
     npm run build
     ```
-2.  Sync the web assets with your native projects:
+2.  Sync the web assets with your native projects (this copies your web code and updates native dependencies):
     ```bash
     npx cap sync
     ```
+    (You can also use `npx cap copy` to just copy assets, or `npx cap update [platform]` to just update native dependencies, but `sync` does both.)
 3.  Open the native project in its respective IDE:
     * For Android:
         ```bash
         npx cap open android
         ```
-    * For iOS:
+    * For iOS (requires macOS and Xcode):
         ```bash
         npx cap open ios
         ```
-4.  From Android Studio or Xcode, you can run the app on an emulator or a physical device.
+4.  From Android Studio or Xcode, you can then select your desired emulator or connected physical device and run the app.
 
 ---
 
