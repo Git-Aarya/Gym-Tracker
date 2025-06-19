@@ -56,7 +56,7 @@ Gym Tracker is the companion app for lifters who want **total control over thei
 <div align="center">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="50" />
   &nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/Capacitor-119EFF?style=for-the-badge&logo=capacitor&logoColor=white" alt="Capacitor" width="50" />
+  <img src="https://github.com/devicons/devicon/blob/master/icons/capacitor/capacitor-plain.svg" alt="Capacitor" width="50" />
   &nbsp;&nbsp;
   <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind" width="50" />
   &nbsp;&nbsp;
