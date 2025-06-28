@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { App as CapacitorApp } from '@capacitor/app';
 import { ArrowLeft, Plus, Check, Dumbbell, Trash2, Save, Clock, Flame, History, LayoutTemplate, X, Timer, Pencil, BarChart2, Target, TrendingUp, ChevronLeft, ChevronRight, Settings, Download, Upload, Calendar } from 'lucide-react';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, LineChart, Line, CartesianGrid, XAxis, YAxis } from 'recharts';
 
@@ -271,11 +270,21 @@ export default function App() {
             name = template.name;
             initialExercises = JSON.parse(JSON.stringify(template.exercises)).map(ex => ({
                 ...ex,
-                sets: (ex.sets || []).map(set => ({
-                    ...set,
-                    completed: false,
-                    id: Date.now() + Math.random()
-                }))
+                sets: (ex.sets || []).map(set => {
+                    const newSet = {
+                        ...set,
+                        completed: false,
+                        id: Date.now() + Math.random()
+                    };
+    
+                    // If it's not cardio, convert the stored kg weight to the current display unit.
+                    // The 'weight' field in the active workout state represents the value in the input field.
+                    if (ex.muscleGroup !== 'Cardio') {
+                        newSet.weight = displayWeight(set.weight || 0);
+                    }
+    
+                    return newSet;
+                })
             }));
         }
         setWorkoutName(name);
@@ -636,13 +645,38 @@ export default function App() {
     };
 
     // --- Data Management ---
-    const handleExportData = () => {
-        const allData = { settings, pastWorkouts, templates, exercisePRs, bodyStats };
-        const jsonString = `data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(allData, null, 2))}`;
-        const link = document.createElement("a");
-        link.href = jsonString;
-        link.download = `gym-tracker-backup-${new Date().toISOString().split('T')[0]}.json`;
-        link.click();
+    const handleExportData = async () => {
+        try {
+            const Capacitor = window.Capacitor;
+            const allData = { settings, pastWorkouts, templates, exercisePRs, bodyStats };
+            const jsonString = JSON.stringify(allData, null, 2);
+            const fileName = `gym-tracker-backup-${new Date().toISOString().split('T')[0]}.json`;
+
+            if (Capacitor?.isNativePlatform()) {
+                const { Filesystem, Directory, Encoding } = Capacitor.Plugins;
+                await Filesystem.writeFile({
+                    path: fileName,
+                    data: jsonString,
+                    directory: Directory.Documents,
+                    encoding: Encoding.UTF8,
+                });
+                setModalState({ type: 'alert', data: { title: "Export Successful", message: `Data saved as ${fileName} in your device's Documents folder.` } });
+            } else {
+                // Web export
+                const blob = new Blob([jsonString], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = fileName;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
+            }
+        } catch (e) {
+            console.error('Error exporting data', e);
+            setModalState({ type: 'alert', data: { title: "Export Error", message: `Could not save data. Please check app permissions. Error: ${e.message}` } });
+        }
     };
     
     const handleImportData = (event) => {
@@ -919,17 +953,17 @@ export default function App() {
     
     const renderWorkoutEditor = ({ workoutData, setWorkoutData, onSave, onCancel, onDelete, isTemplate = false }) => {
         if (!workoutData) return null;
-        
+    
         const updateField = (field, value) => setWorkoutData(d => ({ ...d, [field]: value }));
-        
+    
         const updateExercise = (exIndex, field, value) => {
             const newExercises = [...(workoutData.exercises || [])];
             newExercises[exIndex][field] = value;
             setWorkoutData(d => ({ ...d, exercises: newExercises }));
         };
-        
+    
         const removeExercise = (exIndex) => setWorkoutData(d => ({...d, exercises: d.exercises.filter((_, i) => i !== exIndex)}));
-
+    
         const addSet = (exIndex) => {
             const newExercises = [...(workoutData.exercises || [])];
             const exercise = newExercises[exIndex];
@@ -942,26 +976,25 @@ export default function App() {
             exercise.sets.push(newSet);
             setWorkoutData(d => ({ ...d, exercises: newExercises }));
         };
-        
+    
         const removeSet = (exIndex, setIndex) => {
              const newExercises = [...(workoutData.exercises || [])];
              newExercises[exIndex].sets = newExercises[exIndex].sets.filter((_, i) => i !== setIndex);
              setWorkoutData(d => ({...d, exercises: newExercises}));
         };
-
+    
         const handleSetChange = (exIndex, setIndex, field, value) => {
             const newExercises = [...(workoutData.exercises || [])];
-            const parsedVal = parseFloat(value);
             const set = newExercises[exIndex].sets[setIndex];
-            
-            const finalValue = isNaN(parsedVal) ? '' : parsedVal;
-
-            if (isTemplate && field === 'weight') {
-                set.weight = storeWeight(finalValue);
+    
+            if (field === 'weight') {
+                // The 'value' is the display value from the input. Convert it back to kg for storage.
+                set.weight = storeWeight(value);
             } else {
-                set[field] = finalValue;
+                const parsedVal = parseFloat(value);
+                set[field] = isNaN(parsedVal) ? '' : parsedVal;
             }
-
+    
             setWorkoutData(d => ({...d, exercises: newExercises}));
         };
 
