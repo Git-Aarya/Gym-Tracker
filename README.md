@@ -40,9 +40,21 @@ Gym Tracker is the companion app for lifters who want **total control over thei
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="https://placehold.co/200x400/3b82f6/ffffff?text=Dashboard" alt="Dashboard screenshot" />
-  <img src="https://placehold.co/200x400/8b5cf6/ffffff?text=Active+Workout" alt="Active workout screenshot" />
-  <img src="https://placehold.co/200x400/ec4899/ffffff?text=Progress+Charts" alt="Progress charts screenshot" />
+  <img src="repo_assets/gym-tracker-ss/cropped_Dashboard.jpg" alt="Dashboard screenshot" />
+  <img src="repo_assets/gym-tracker-ss/cropped_Active_Workout.jpg" alt="Active workout screenshot" />
+  <img src="repo_assets/gym-tracker-ss/cropped_Workout_Templates.jpg" alt="Templates screenshot" />
+</p>
+
+<p align="center">
+  <img src="repo_assets/gym-tracker-ss/cropped_Progress_Analytics_1.jpg" alt="Workout Calendar and Body Weight Tracker screenshot" />
+  <img src="repo_assets/gym-tracker-ss/cropped_Progress_Analytics_2.jpg" alt="Progress Analytics screenshot" />
+  <img src="repo_assets/gym-tracker-ss/cropped_Exercise_Stat.jpg" alt="Individual Exercise Analytics screenshot" />
+</p>
+
+<p align="center">
+  <img src="repo_assets/gym-tracker-ss/cropped_Workout_Template_editing.jpg" alt="Template Editor screenshot" />
+  <img src="repo_assets/gym-tracker-ss/cropped_Workout_History.jpg" alt="Workout History screenshot" />
+  <img src="repo_assets/gym-tracker-ss/cropped_Settings.jpg" alt="Settings screenshot" />
 </p>
 
 ---
