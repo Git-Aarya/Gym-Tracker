@@ -77,7 +77,8 @@ npm install capacitor-resources # for icons
 git clone https://github.com/Git-Aarya/Gym-Tracker.git
 cd Gym-Tracker
 npm install        # install dependencies
-npm install @capacitor/app @capacitor/filesystem   # Install Capacitor dependencies for native features
+npm install @capacitor/app@^6.0.0 @capacitor/filesystem@^6.0.0
+   # Install Capacitor dependencies for native features
 npm run start      # launch Vite dev server
 ```
 
