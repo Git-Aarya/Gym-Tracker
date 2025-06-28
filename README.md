@@ -136,17 +136,6 @@ npx cap open ios       # Xcode (macOS only)
 
 ---
 
-## Roadmap
-
-* [ ] 🔄 Optional cloud backup/sync
-* [ ] 🤝 Social workout sharing
-* [ ] 📊 Weekly summary reports
-* [ ] ⌚ Wearable integration (Apple Watch, etc.)
-
-See [open issues](https://github.com/Git-Aarya/Gym-Tracker/issues) for more.
-
----
-
 ## Contributing
 
 Pull requests are welcome! Please open an issue first to discuss any major changes.
