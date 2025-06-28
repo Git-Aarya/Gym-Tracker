@@ -32,7 +32,7 @@ Gym Tracker is the companion app for lifters who want **total control over thei
 | **Offline & Data Ownership** | • Works 100 % offline 🔒<br>• No sign‑up or cloud account <br>• One‑tap export & import of your data                                                                                                        |
 | **Workout Flow**             | • *Return to Workout* button restores an unfinished session<br>• Auto rest‑timer with sound cues ⏱️<br>• Handles both strength (sets × reps × weight) and cardio (time / distance)                          |
 | **Templates**                | • Unlimited preset workouts & exercises 🏗️<br>• Per‑exercise defaults (reps, weight, rest)<br>• Metric ⇄ Imperial switch updates all values instantly                                                      |
-| **Progress Analytics**       | • Calendar heat‑map of training days 📆<br>• Body‑weight tracker with line chart<br>• Auto‑detected PRs (max weight & volume) 🏅<br>• Muscle‑group distribution pie chart<br>• Per‑exercise progress graphs |
+| **Progress Analytics**       | • Calendar heat‑map of training days 📆<br>• Body‑weight tracker with line chart<br>• Auto‑detected PRs (max weight & volume) 🏅<br> • Dedicated Cardio PRs (Longest Duration)<br>• Muscle‑group distribution pie chart<br>• Per‑exercise progress graphs |
 | **Settings & UX**            | • Custom default rest time<br>• Themed modals replace native alerts<br>• Native Android back‑button support via Capacitor                                                                                   |
 
 ---
@@ -98,6 +98,7 @@ npm install capacitor-resources # for icons
 git clone https://github.com/Git-Aarya/Gym-Tracker.git
 cd Gym-Tracker
 npm install        # install dependencies
+npm install @capacitor/app @capacitor/filesystem   # Install Capacitor dependencies for native features
 npm run start      # launch Vite dev server
 ```
 
