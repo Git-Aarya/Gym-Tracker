@@ -75,6 +75,7 @@ Gym Tracker is the companion app for lifters who want **total control over thei
 
 ```bash
 npm install -g npm@latest   # update npm (optional)
+npm install capacitor-resources # for icons
 ```
 
 ### Installation & Dev Server
@@ -95,8 +96,10 @@ Visit `http://localhost:5173` in your browser; the page reloads on save.
 ```bash
 npm run build   # create production web assets
 npx cap sync    # copy assets & sync native deps
+npm run resources # create nessecary icons
 
 # then, open in your IDE of choice
+
 npx cap open android   # Android Studio
 npx cap open ios       # Xcode (macOS only)
 ```
