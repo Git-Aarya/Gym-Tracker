@@ -2,27 +2,6 @@
 
 **A sleek, minimal, all-in-one mobile app to track your gym workouts, monitor your progress, and stay motivated. Built with React and designed to run completely offline on your device.**
 
-
----
-
-## 📑 Table of Contents
-
-1. [About](#about)
-2. [Features](#features)
-3. [Screenshots](#screenshots)
-4. [Tech Stack](#tech-stack)
-5. [Getting Started](#getting-started)
-6. [Building for Mobile](#building-for-mobile)
-7. [Roadmap](#roadmap)
-8. [Contributing](#contributing)
-9. [License](#license)
-
----
-
-## About
-
-Gym Tracker is the companion app for lifters who want **total control over their training data** while keeping things private and lightweight. Everything — from workout templates to PR graphs — is stored locally, so you can lift in airplane mode and still have every rep logged.
-
 ---
 
 ## Features
