@@ -40,21 +40,21 @@ Gym Tracker is the companion app for lifters who want **total control over thei
 ## 📸 Screenshots
 
 <p align="center">
-<table>
+<table border="0" cellpadding="6" cellspacing="0">
   <tr>
-    <td><img src="repo_assets/gym-tracker-ss/cropped_Dashboard.jpg" alt="Dashboard" style="border-radius:12px; margin:8px;" width="220"/></td>
-    <td><img src="repo_assets/gym-tracker-ss/cropped_Active_Workout.jpg" alt="Active Workout" style="border-radius:12px; margin:8px;" width="220"/></td>
-    <td><img src="repo_assets/gym-tracker-ss/cropped_Workout_Templates.jpg" alt="Templates" style="border-radius:12px; margin:8px;" width="220"/></td>
+    <td><img src="repo_assets/gym-tracker-ss/cropped_Dashboard.jpg" alt="Dashboard" style="border-radius:12px; margin:6px;" width="220"/></td>
+    <td><img src="repo_assets/gym-tracker-ss/cropped_Active_Workout.jpg" alt="Active Workout" style="border-radius:12px; margin:6px;" width="220"/></td>
+    <td><img src="repo_assets/gym-tracker-ss/cropped_Workout_Templates.jpg" alt="Templates" style="border-radius:12px; margin:6px;" width="220"/></td>
   </tr>
   <tr>
-    <td><img src="repo_assets/gym-tracker-ss/cropped_Progress_Analytics_1.jpg" alt="Calendar & Body Weight" style="border-radius:12px; margin:8px;" width="220"/></td>
-    <td><img src="repo_assets/gym-tracker-ss/cropped_Progress_Analytics_2.jpg" alt="Progress Charts" style="border-radius:12px; margin:8px;" width="220"/></td>
-    <td><img src="repo_assets/gym-tracker-ss/cropped_Exercise_Stat.jpg" alt="Exercise Stats" style="border-radius:12px; margin:8px;" width="220"/></td>
+    <td><img src="repo_assets/gym-tracker-ss/cropped_Progress_Analytics_1.jpg" alt="Calendar & Body Weight" style="border-radius:12px; margin:6px;" width="220"/></td>
+    <td><img src="repo_assets/gym-tracker-ss/cropped_Progress_Analytics_2.jpg" alt="Progress Charts" style="border-radius:12px; margin:6px;" width="220"/></td>
+    <td><img src="repo_assets/gym-tracker-ss/cropped_Exercise_Stat.jpg" alt="Exercise Stats" style="border-radius:12px; margin:6px;" width="220"/></td>
   </tr>
   <tr>
-    <td><img src="repo_assets/gym-tracker-ss/cropped_Workout_Template_editing.jpg" alt="Template Editing" style="border-radius:12px; margin:8px;" width="220"/></td>
-    <td><img src="repo_assets/gym-tracker-ss/cropped_Workout_History.jpg" alt="Workout History" style="border-radius:12px; margin:8px;" width="220"/></td>
-    <td><img src="repo_assets/gym-tracker-ss/cropped_Settings.jpg" alt="Settings" style="border-radius:12px; margin:8px;" width="220"/></td>
+    <td><img src="repo_assets/gym-tracker-ss/cropped_Workout_Template_editing.jpg" alt="Template Editing" style="border-radius:12px; margin:6px;" width="220"/></td>
+    <td><img src="repo_assets/gym-tracker-ss/cropped_Workout_History.jpg" alt="Workout History" style="border-radius:12px; margin:6px;" width="220"/></td>
+    <td><img src="repo_assets/gym-tracker-ss/cropped_Settings.jpg" alt="Settings" style="border-radius:12px; margin:6px;" width="220"/></td>
   </tr>
 </table>
 </p>
