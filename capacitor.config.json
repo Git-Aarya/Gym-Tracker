@@ -5,5 +5,8 @@
   "server": {
     "androidScheme": "https",
     "hostname": "localhost"
-}
+  },
+  "ios": {
+    "scheme": "Gym Tracker"
+  }
 }
