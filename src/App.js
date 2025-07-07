@@ -85,7 +85,7 @@ const RestTimerPopup = ({ timerData, onDismiss }) => {
 
     return (
         <div className="fixed bottom-0 left-0 right-0 z-50 p-4">
-            <div className="bg-blue-600 text-white rounded-xl shadow-2xl p-4 w-full max-w-xl mx-auto">
+            <div className="bg-blue-600 text-white rounded-xl shadow-2xl p-4 w-full max-w-screen mx-auto">
                 <div className="flex justify-between items-center">
                     <div>
                         <p className="text-sm font-bold">Rest Timer</p>
@@ -911,7 +911,7 @@ export default function App() {
                         </div>
                     ))}</div>
                 </div>
-                <div className="p-4 bg-gray-900 border-t border-gray-700 fixed bottom-0 left-0 right-0 max-w-xl mx-auto">
+                <div className="p-4 bg-gray-900 border-t border-gray-700 fixed bottom-0 left-0 right-0 max-w-screen mx-auto">
                     <button onClick={() => setModalState({ type: 'addExercise' })} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-xl flex items-center justify-center text-lg shadow-lg">
                         <Plus className="mr-2" /> Add Exercise
                     </button>
@@ -945,7 +945,7 @@ export default function App() {
                     ))}</div>
                 )}
             </div>
-            <div className="fixed bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-gray-900 to-transparent">
+            <div className="fixed bottom-0 left-0 right-0 max-w-screen mx-auto p-4 bg-gradient-to-t from-gray-900 to-transparent">
                 <button onClick={handleCreateNewTemplate} className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-4 rounded-xl flex items-center justify-center text-lg"><Plus className="mr-2" /> Create New Template</button>
             </div>
         </div>
@@ -1079,7 +1079,7 @@ export default function App() {
                      {onDelete && <button onClick={() => setModalState({ type: 'confirmDeleteWorkout', data: { id: workoutData.id }})} className="w-full mt-4 bg-red-800 hover:bg-red-700 text-white font-bold py-3 rounded-lg text-sm">Delete Workout</button>}
                 </div>
 
-                <div className="p-4 bg-gray-900 border-t border-gray-700 fixed bottom-0 left-0 right-0 max-w-xl mx-auto">
+                <div className="p-4 bg-gray-900 border-t border-gray-700 fixed bottom-0 left-0 right-0 max-w-screen mx-auto">
                     <button onClick={() => setModalState({ type: `addExerciseTo${isTemplate ? 'Template' : 'PastWorkout'}` })} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-xl flex items-center justify-center text-lg shadow-lg"><Plus className="mr-2" /> Add Exercise</button>
                 </div>
             </div>
@@ -1356,8 +1356,8 @@ export default function App() {
     };
 
     return (
-        <div className="bg-gray-900 text-white min-h-screen font-sans">
-            <div className="max-w-xl mx-auto bg-gray-900 shadow-lg h-full">
+        <div className="bg-gray-900 text-white min-h-screen my-auto font-sans">
+            <div className="max-w-screen mx-auto bg-gray-900 shadow-lg h-full">
                 {renderScreen()}
                 {restTimer.active && <RestTimerPopup timerData={restTimer} onDismiss={handleDismissTimer} />}
 
